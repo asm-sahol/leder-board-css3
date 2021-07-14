@@ -61,3 +61,29 @@ hr{
 .blog-author{
     color: #9F9F9F;
 }
+/* ------------------------------------
+            courses styles
+-------------------------------------- */
+.course > .course-banner > img{
+    Width: 224px;
+    Height: 104px;
+}
+.fa-star.fill{
+    color: #FFC014;    
+}
+.fa-star{
+    color: #a19d8f;
+    font-size: 12px;  
+}
+.courses{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    Width: 252.42px;
+    column-gap: 30px;
+}
+
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
