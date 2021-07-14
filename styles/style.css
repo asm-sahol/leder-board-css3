@@ -6,15 +6,23 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 .container{
     background-color: #FFFFFF;
     width: 870px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.top-players{
+    margin-bottom: 30px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
 }
 .player{
     display: flex;
@@ -23,4 +31,33 @@ main{
 .player img{
     width: 56px;
     height: 56px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+/*
+---------------------------------------- 
+             top blogs styles
+----------------------------------------
+ */
+ .blogs{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-row-gap: 26px;
+ }
+ .blog{
+     display: flex;
+ }
+.blog > .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
 }
